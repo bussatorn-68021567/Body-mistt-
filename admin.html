@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบจัดการคำสั่งซื้อ — BODY SCENT Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .admin-table-container {
+      width: 100%;
+      overflow-x: auto;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      margin-top: 32px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+    th, td {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    th {
+      background-color: var(--bg-secondary);
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--text-main);
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" style="padding: 24px 0; border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="brand-title" style="font-size: 1.5rem; font-weight: 600; letter-spacing: 0.15em; text-decoration: none; color: var(--text-main);">BODY SCENT <span style="font-size: 0.75rem; color: var(--accent-gold); font-weight: 400;">ADMIN</span></a>
+      <nav style="display: flex; gap: 32px; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">
+        <a href="index.html" style="text-decoration: none; color: var(--text-main);">หน้าแรก</a>
+        <a href="product.html" style="text-decoration: none; color: var(--text-main);">หน้าร้านค้า</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="section">
+    <div class="container">
+      
+      <div class="section-header" style="text-align: center;">
+        <span class="subtitle" style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent-gold);">Management</span>
+        <h2 style="font-weight: 400; margin-top: 8px;">รายการคำสั่งซื้อทั้งหมด</h2>
+        <div class="divider" style="width: 40px; height: 1px; background-color: var(--accent-gold); margin: 16px auto;"></div>
+      </div>
+
+      <div class="admin-table-container">
+        <table id="ordersTable">
+          <thead>
+            <tr>
+              <th>วันเวลา</th>
+              <th>ชื่อลูกค้า</th>
+              <th>เบอร์โทร / Line</th>
+              <th>รายการสินค้า</th>
+              <th>จำนวนเงินรวม</th>
+              <th>หมายเหตุ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- script.js จะทำการ render รายการออเดอร์ในส่วนนี้ -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-color); background: var(--bg-primary); margin-top: 80px;">
+    <div class="container" style="text-align: center;">
+      <p class="brand-title" style="font-size: 1.2rem; letter-spacing: 0.15em; margin-bottom: 8px;">BODY SCENT</p>
+      <p style="font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Body Scent Admin Portal.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

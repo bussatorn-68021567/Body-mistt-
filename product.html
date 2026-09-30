@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สินค้าทั้งหมด — BODY SCENT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" style="padding: 24px 0; border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="brand-title" style="font-size: 1.5rem; font-weight: 600; letter-spacing: 0.15em;">BODY SCENT</a>
+      <nav style="display: flex; gap: 32px; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html" style="color: var(--accent-gold);">สินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Product Section -->
+  <main class="section">
+    <div class="container">
+      
+      <!-- Page Title -->
+      <div class="section-header">
+        <span class="subtitle">Our Collection</span>
+        <h2>สินค้าทั้งหมด</h2>
+        <div class="divider"></div>
+      </div>
+
+      <!-- Filter Bar for script.js -->
+      <div id="filter-bar" style="display: flex; justify-content: center; gap: 12px; margin-bottom: 48px; flex-wrap: wrap;"></div>
+
+      <!-- Product List Grid for script.js -->
+      <div id="product-list" class="product-grid"></div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-color); background: var(--bg-primary);">
+    <div class="container text-center">
+      <p class="brand-title" style="font-size: 1.2rem; letter-spacing: 0.15em; margin-bottom: 8px;">BODY SCENT</p>
+      <p style="font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Body Scent. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

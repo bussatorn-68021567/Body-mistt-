@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BODY SCENT — กลิ่นหอมที่เลือกได้ตามใจ ในทุกวันของคุณ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar" style="padding: 24px 0; border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="brand-title" style="font-size: 1.5rem; font-weight: 600; letter-spacing: 0.15em;">BODY SCENT</a>
+      <nav style="display: flex; gap: 32px; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section (Full Viewport Height) -->
+  <section class="hero-section" style="min-height: calc(100vh - 80px); display: flex; align-items: center; justify-content: center; text-align: center; background-color: var(--bg-primary); padding: 60px 24px;">
+    <div class="hero-content" style="max-width: 800px;">
+      <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.3em; color: var(--accent-gold); display: block; margin-bottom: 20px;">Elegance in Every Drop</span>
+      <h1 style="margin-bottom: 24px; font-weight: 400;">BODY SCENT</h1>
+      <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 40px; font-weight: 300;">กลิ่นหอมที่เลือกได้ตามใจ ในทุกวันของคุณ</p>
+      <a href="product.html" class="btn">ดูสินค้าทั้งหมด</a>
+    </div>
+  </section>
+
+  <!-- 4 Mood Section -->
+  <section class="section" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Scent Collection</span>
+        <h2>ค้นหากลิ่นที่สะท้อนความเป็นคุณ</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+        
+        <!-- Fresh Mood -->
+        <a href="product.html?mood=fresh" class="product-card" style="text-decoration: none; border: 1px solid var(--border-color); background: var(--bg-card); padding: 36px 28px;">
+          <div class="mood-tag">
+            <span class="mood-indicator mood-fresh"></span>
+            <span>FRESH</span>
+          </div>
+          <h3 style="margin: 12px 0 16px 0;">สดชื่น</h3>
+          <p>ตื่นตัวรับวันใหม่ด้วยกลิ่นหอมโปร่งสบาย สะอาดเบาสไตล์ที่ทำให้รู้สึกสดชื่นได้ทั้งวัน</p>
+        </a>
+
+        <!-- Sweet Mood -->
+        <a href="product.html?mood=sweet" class="product-card" style="text-decoration: none; border: 1px solid var(--border-color); background: var(--bg-card); padding: 36px 28px;">
+          <div class="mood-tag">
+            <span class="mood-indicator mood-sweet"></span>
+            <span>SWEET</span>
+          </div>
+          <h3 style="margin: 12px 0 16px 0;">หวานละมุน</h3>
+          <p>กลิ่นหอมอ่อนโยนที่ให้ความรู้สึกอบอุ่นสบายใจ หวานแผ่วเบาแบบที่ใครอยู่ใกล้ก็รู้สึกดีไปด้วย</p>
+        </a>
+
+        <!-- Confident Mood -->
+        <a href="product.html?mood=confident" class="product-card" style="text-decoration: none; border: 1px solid var(--border-color); background: var(--bg-card); padding: 36px 28px;">
+          <div class="mood-tag">
+            <span class="mood-indicator mood-confident"></span>
+            <span>CONFIDENT</span>
+          </div>
+          <h3 style="margin: 12px 0 16px 0;">มั่นใจ</h3>
+          <p>กลิ่นหอมนิ่งสะอาดที่ช่วยเสริมความน่าเชื่อถือ พร้อมให้คุณออกไปเจอโลกภายนอกอย่างมั่นใจ</p>
+        </a>
+
+        <!-- Romance Mood -->
+        <a href="product.html?mood=romance" class="product-card" style="text-decoration: none; border: 1px solid var(--border-color); background: var(--bg-card); padding: 36px 28px;">
+          <div class="mood-tag">
+            <span class="mood-indicator mood-romance"></span>
+            <span>ROMANCE</span>
+          </div>
+          <h3 style="margin: 12px 0 16px 0;">โรแมนติก</h3>
+          <p>กลิ่นหอมอบอุ่นชวนหลงใหลที่ติดตรึงความทรงจำ หวานลึกมีเสน่ห์แบบที่ทำให้คนใกล้ตัวจดจำคุณได้</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-color); background: var(--bg-primary);">
+    <div class="container text-center">
+      <p class="brand-title" style="font-size: 1.2rem; letter-spacing: 0.15em; margin-bottom: 8px;">BODY SCENT</p>
+      <p style="font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Body Scent. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

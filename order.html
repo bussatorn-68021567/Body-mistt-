@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สั่งซื้อสินค้า — BODY SCENT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .order-container {
+      max-width: 680px;
+      margin: 0 auto;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 48px;
+    }
+    .form-group {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+    .form-group label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .form-control {
+      width: 100%;
+      padding: 14px 16px;
+      font-family: var(--font-sans);
+      font-size: 0.95rem;
+      color: var(--text-main);
+      background-color: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      transition: var(--transition-smooth);
+      outline: none;
+    }
+    .form-control:focus {
+      border-color: var(--accent-gold);
+      background-color: #FFFFFF;
+    }
+    .form-control[readonly] {
+      background-color: var(--bg-secondary);
+      color: var(--text-muted);
+      cursor: not-allowed;
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" style="padding: 24px 0; border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" class="brand-title" style="font-size: 1.5rem; font-weight: 600; letter-spacing: 0.15em;">BODY SCENT</a>
+      <nav style="display: flex; gap: 32px; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase;">
+        <a href="index.html">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <section class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="subtitle">Checkout</span>
+        <h2>ยืนยันการสั่งซื้อ</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="order-container">
+        <form id="orderForm">
+          
+          <div class="form-group">
+            <label for="customerName">ชื่อ - นามสกุล ผู้รับ</label>
+            <input type="text" id="customerName" class="form-control" placeholder="กรอกชื่อและนามสกุล" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact">เบอร์โทรศัพท์ / Line ID</label>
+            <input type="text" id="contact" class="form-control" placeholder="08X-XXX-XXXX หรือ Line ID" required>
+          </div>
+
+          <div class="form-group">
+            <label for="items">รายการสินค้าที่สั่งซื้อ</label>
+            <textarea id="items" class="form-control" readonly placeholder="รายการสินค้าจะปรากฏที่นี่..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="total">จำนวนเงินรวมทั้งสิ้น (บาท)</label>
+            <input type="text" id="total" class="form-control" readonly placeholder="0.00">
+          </div>
+
+          <div class="form-group">
+            <label for="note">หมายเหตุเพิ่มเติม (ถ้ามี)</label>
+            <textarea id="note" class="form-control" placeholder="รายละเอียดที่อยู่จัดส่ง หรือคำขอเพิ่มเติม..."></textarea>
+          </div>
+
+          <div style="margin-top: 36px; text-align: center;">
+            <button type="submit" class="btn btn-accent" style="width: 100%; padding: 16px;">ยืนยันสั่งซื้อ</button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 40px 0; border-top: 1px solid var(--border-color); background: var(--bg-primary);">
+    <div class="container text-center">
+      <p class="brand-title" style="font-size: 1.2rem; letter-spacing: 0.15em; margin-bottom: 8px;">BODY SCENT</p>
+      <p style="font-size: 0.8rem; color: var(--text-light);">&copy; 2026 Body Scent. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
